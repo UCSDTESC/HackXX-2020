@@ -1,6 +1,6 @@
-# SD Hacks 2019 Website
+# HackXX 2020 Website
 
-[SD Hacks 2019](https://sdhacks.io)
+[HackXX 2020](https://hackxx.io)
 
 Run with `npm start`
 
