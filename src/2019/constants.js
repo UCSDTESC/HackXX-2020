@@ -1,13 +1,17 @@
 export const ScheduleConstants = {
-    background: `#2D728F;`
+    background: `#071728;`
 }
 
 export const SponsorsConstants = {
-    background: `#004666;`
+    background: `#071728;`
 }
 
 export const FooterConstants = {
-    background: `#002136;`
+    background: `#071728;`
+}
+
+export const DarkBackground = {
+    background: `#071728;`
 }
 
 export const WrapperConstants = {
@@ -17,3 +21,5 @@ export const WrapperConstants = {
 export const BORDER_RADIUS = '1rem';
 export const LIGHT_BLUE = '#43D2F0';
 export const PURPLE = '#8E44AD';
+
+export const DARK = '#071728';

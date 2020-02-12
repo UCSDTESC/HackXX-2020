@@ -8,6 +8,8 @@ import {
     SectionHeader
 } from '../styles';
 
+import {DarkBackground} from '../constants';
+
 import Question from './Question';
 import faqData from '../data/Faq';
 
@@ -46,7 +48,7 @@ const Stingray = styled.img`
 `
 
 const FaqSection = styled(Page)`
-    background: black;
+    background: ${DarkBackground.background};
     height: auto;
 `
 
@@ -66,7 +68,7 @@ class Faq extends Component {
                 <Container className="d-flex mx-auto">
                     <SectionContent data-entrance="fade">
                         <div className="container-fluid">
-                            <div className="row">
+                            <div className="row justify-content-center">
                                 <SectionHeader>
                                     Frequently Asked Questions
                                 </SectionHeader>
@@ -83,9 +85,6 @@ class Faq extends Component {
                                         />)}
                                     </div>
                                 </div>
-                            </div>
-                            <div className="text-center text-white w-100">
-                                Got any other questions? Email us at <FaqContactLink href="mailto:hackxx@tesc.ucsd.edu"> {' '} hackxx@tesc.ucsd.edu! </FaqContactLink>
                             </div>
                         </div>
                     </SectionContent>

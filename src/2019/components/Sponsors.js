@@ -8,15 +8,11 @@ import {
     SectionHeader
 } from '../styles';
 
-import {SponsorsConstants} from '../constants';
+import {DarkBackground} from '../constants';
 import {tierOneSponsor, tierTwoSponsor, tierThreeSponsor, tierFourSponsor, tierOnePartner, tierTwoPartner} from '../data/Sponsors.js'
 
 const SponsorsSection = styled(Page)`
-    background: url('/sea-animals/silhouette.svg'), ${SponsorsConstants.background};
-    background-position: bottom;
-    background-repeat: no-repeat;
-    position: relative;
-    z-index: 5;
+    background: ${DarkBackground.background};
 `
 
 const SponsorContainer = styled.a`

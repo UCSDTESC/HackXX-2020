@@ -16,11 +16,16 @@ const NavContainer = styled.nav`
 `
 
 const NavLink = styled.a`
+    //color: black;
     font-size: 1rem;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
     margin: 0.2rem;
+
+    & .nav-link {
+        color: white;
+    }
 `
 
 const NavLogo = styled.img`
@@ -34,7 +39,11 @@ const NavLogo = styled.img`
     `)}
 `
 
-class SDHacksNav extends Component {
+const NavText = styled.li`
+    color: white;
+`
+
+class Nav extends Component {
 
     constructor(props) {
         super(props);
@@ -48,11 +57,13 @@ class SDHacksNav extends Component {
         $(window).scroll(function () {
             if ($(this).scrollTop() > SCROLL_THRESHOLD) { 
                 //make nav white when below threshold
-                _nav.addClass('bg-white shadow');
+                _nav.addClass('bg-dark shadow');
+                _nav.addClass('test');
             } else {
                 //make nav transparent only if the nav is collapsed
                 if ($(window).width() > 768 || $('.navbar-toggler').attr('aria-expanded') === "false") {
-                    _nav.removeClass('bg-white shadow');
+                    _nav.removeClass('bg-dark shadow');
+                    _nav.removeClass('test');
                 }
             }
         });
@@ -120,4 +131,4 @@ class SDHacksNav extends Component {
     }
 }
 
-export default withRouter(SDHacksNav); 
+export default withRouter(Nav); 

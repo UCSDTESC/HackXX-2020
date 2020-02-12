@@ -9,6 +9,8 @@ import {
     SectionHeader
 } from '../styles';
 
+import {DarkBackground} from '../constants';
+
 const PaddedRow = styled.div`
     margin: 2rem 0;
     font-size: 2rem;
@@ -45,7 +47,7 @@ const PaddedDay = styled.div`
 `
 
 const ScheduleSection = styled(Page)`
-    background: black;
+    background: ${DarkBackground.background};
 `
 
 /*${mediaBreakpointDown('md', `
@@ -329,7 +331,7 @@ class Schedule extends Component {
                                     <SectionSubHeader className="text-center">Sunday, October 27th</SectionSubHeader>
                                     {this.renderStaticSchedule(2, this.state.records)}
                                 </div>*/}
-                                Coming Soon!
+                                Stay tuned!
                             </PaddedRow>
                         </div>
                     </SectionContent>

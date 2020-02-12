@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-
+import {ReactComponent as Braces} from '../svg/women-centric.svg';
 
 import {
     Page,
@@ -11,7 +11,7 @@ import {
 import {mediaBreakpointDown} from '../../breakpoints';
 
 const HeroSection = styled(Page)`
-    background: url('/hero.svg'), linear-gradient(45deg, #DDF2FA, #C4E9F7, #81B9F0);
+    background: url('/hero.svg'), linear-gradient(180deg, #224755 0%, #011321 100%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom 100%;
@@ -25,8 +25,9 @@ const HeroSection = styled(Page)`
 `;
 
 const HeroImage = styled.img`
-    width: 60%;
-    margin-top: -10rem;
+    width: 40%;
+    //margin-top: -10rem;
+    margin-bottom: 1rem;
 
     ${mediaBreakpointDown('md', `
         margin-top: -9rem;
@@ -37,6 +38,14 @@ const HeroCopy = styled.div`
     font-size: 1.5rem;
     color: white;
 `
+
+const HeroBraces = styled(Braces)`
+    //margin-top: 2rem;
+    width: 50%;
+    display: block; 
+    margin: 0 auto;
+    margin-bottom: 1rem;
+`;
 
 const HeroContent = styled.div`
     font-family: 'Reem Kufi', sans-serif;
@@ -49,7 +58,7 @@ const CTA = styled(WhiteButton)`
     margin-bottom: 1rem;
 
     &:hover {
-        color: #4592AD !important;
+        color: #071728 !important;
     }
 `
 
@@ -66,26 +75,26 @@ class Hero extends Component {
                     <div className="container-fluid align-items-center justify-content-center d-flex mt-5" style={{minHeight:'100%'}} >
                         <Container className="row w-100">
                             <div className="col-md-6 align-items-center d-flex justify-content-center flex-column">
-                            </div>
-
-                            <div className="col-md-6 align-items-center d-flex justify-content-center flex-column">
                                 <HeroImage src="/logo.svg" className="img-fluid" />
+                                <HeroBraces />
                                 <HeroCopy className="text-center">
+                                    <HeroContent>May 2 - 3, 2020</HeroContent>
+                                    <HeroContent>Price Center West Ballroom, UC San Diego</HeroContent>
 
-                                    <HeroContent>October 25 - 27, 2019</HeroContent>
-                                    <HeroContent>RIMAC, UC San Diego</HeroContent>
-
-                                    <Button href="https://www.tesc.events/register/sdhacks2019" target="_blank" className="text-white">
+                                    <Button href="https://www.tesc.events/register/hackxx2020" target="_blank" className="text-white">
                                         <CTA className="btn btn-outline-light" >
                                             Apply
                                         </CTA>                      
                                     </Button>
-                                    <Button href="https://tesc.typeform.com/to/vgXWp2" target="_blank" className="text-white">
+                                    {/*<Button href="https://tesc.typeform.com/to/vgXWp2" target="_blank" className="text-white">
                                         <CTA className="btn btn-outline-light" >
                                             Volunteer
                                         </CTA>                      
-                                    </Button>
+                                    </Button>*/}
                                 </HeroCopy>
+                            </div>
+
+                            <div className="col-md-6 align-items-center d-flex justify-content-center flex-column">
                             </div>
                         </Container>
                     </div>

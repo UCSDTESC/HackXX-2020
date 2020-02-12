@@ -13,5 +13,18 @@ code {
 }
 
 .nav__white {
-  background: white !important;
+  background: rgb(0, 0, 0, 0,5);
 }
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.test {
+  color: gray;
+}
+
+.scroll__bg {
+  color: blue;
+}
+

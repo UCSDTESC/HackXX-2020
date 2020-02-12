@@ -8,11 +8,12 @@ import {
     SectionContent,
 } from '../styles';
 
+import {DarkBackground} from '../constants';
 import {mediaBreakpointDown} from '../../breakpoints';
 
 const TracksSection = styled(Page)`
     height: auto;
-    background: black;
+    background: ${DarkBackground.background};
 `
 
 const TracksHeader = styled(SectionHeader)`
@@ -106,9 +107,6 @@ class Why extends Component {
                                         New to hackathons? We have a supportive group of mentors who can walk you through it and provide you with resources!
                                     </TracksDescription>
                                 </div>
-                            </div>
-                            <div className="row justify-content-center">
-                                <Fish src="/sea-animals/fish.svg" />
                             </div>
                         </div>
                     </SectionContent>

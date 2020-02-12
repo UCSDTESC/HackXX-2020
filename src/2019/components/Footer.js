@@ -2,10 +2,10 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import {mediaBreakpointDown} from '../../breakpoints';
 
-import {FooterConstants} from '../constants';
+import {DarkBackground} from '../constants';
 
 const ContentSection = styled.section`
-    background: ${FooterConstants.background};
+    background: ${DarkBackground.background};
     z-index: 2;
     text-align: center;
     height: 18rem;
