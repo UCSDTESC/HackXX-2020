@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import 'bootstrap/dist/js/bootstrap';
 
 import {
     BORDER_RADIUS,
@@ -10,7 +9,7 @@ import {
 
 const QuestionContainer = styled.div`
     width: 100%;
-    background: white;
+    //background: white;
     color: blue;
     font-size: 1.35rem;
     font-weight: bold;
@@ -31,19 +30,20 @@ const QuestionContainer = styled.div`
 `
 
 const QuestionContent = styled.div`
-    background: white;
-    color: black;
+    background: transparent;
+    color: white;
     text-decoration: none;
     text-align: center;
     padding: 1rem 2rem;
 `
 
 const QuestionText = styled.a`
-    color: ${PURPLE};
-    text-decoration: none;
+    color: white;
+    text-decoration: underline;
 
     &:hover {
-        color: ${LIGHT_BLUE}
+        color: white;
+        text-decoration: none;
     }
 `
 
@@ -67,7 +67,7 @@ class Question extends Component {
                             <QuestionContainer className="panel-title" isLast={isLast} isFirst={isFirst}>
                                 <QuestionText className="collapsed w-100 d-block text-center" role="button" data-toggle="collapse" data-parent="#accordion" href={`#collapse-${idx}`} aria-expanded="false" aria-controls={`collapse-${idx}`}>
                                     {question}
-                                {/*<i className="pull-right fa fa-plus float-right mt-1 question__icon"></i>*/}
+                                {/* <i className="pull-right fa fa-plus float-right mt-1 question__icon"></i> */}
                                 </QuestionText>
                                 <QuestionContent className="panel-collapse collapse mt-3" id={`collapse-${idx}`} role="tabpanel" aria-labelledby={`heading-${idx}`}>
                                     <div className="panel-body">

@@ -6,15 +6,11 @@ import {
     Page,
     Container,
     SectionContent,
-    SectionHeader
+    SectionHeader,
+    PaddedRow
 } from '../styles';
 
-import {DarkBackground} from '../constants';
-
-const PaddedRow = styled.div`
-    margin: 2rem 0;
-    font-size: 2rem;
-`
+import {ScheduleConstants} from '../constants';
 
 const ScheduleHeader = styled(SectionHeader)`
     color: ${props => props.color || 'white'};
@@ -47,7 +43,7 @@ const PaddedDay = styled.div`
 `
 
 const ScheduleSection = styled(Page)`
-    background: ${DarkBackground.background};
+    background: ${ScheduleConstants.gradient};
 `
 
 /*${mediaBreakpointDown('md', `

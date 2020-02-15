@@ -8,7 +8,7 @@ import {
     SectionHeader
 } from '../styles';
 
-import {DarkBackground} from '../constants';
+import {FaqConstants} from '../constants';
 
 import Question from './Question';
 import faqData from '../data/Faq';
@@ -48,7 +48,7 @@ const Stingray = styled.img`
 `
 
 const FaqSection = styled(Page)`
-    background: ${DarkBackground.background};
+    background: ${FaqConstants.gradient};
     height: auto;
 `
 

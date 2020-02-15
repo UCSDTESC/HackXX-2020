@@ -40,7 +40,7 @@ class SDHacks2019Page extends Component {
                 <Nav />
                 <Hero />
                 <About />
-                <Why />
+                {/* <Why /> */}
                 <Involved />
                 <Faq />
                 <Schedule />

@@ -2,78 +2,53 @@ import React from 'react';
 
 const faq = [
     {
-        question: `What's a Hackathon?`,
-        answer: "A hackathon is an technology-focused, design sprint-like event during which participants create new projects in a short amount of time. Participants may work individually or in teams, and you can create any type of project that you would like! "
+        question: `What is a Hackathon?`,
+        answer: "A hackathon is a technological marathon where a large number of people meet to collaboratively build out their ideas using technology."
     },
     {
-        question: `Do I need to have a project idea?`,
-        answer: `You do not have to have a project idea beforehand, you can brainstorm and get inspiration during the event! We will also hold technical workshops to give you a starting point!`
+        question: `Who can attend HackXX?`,
+        answer: `HackXX is an all-inclusive hackathon that is open to all majors and genders. Any college or high school students that is over 18 years of age are eligible to apply. If you are enrolled at a UC campus but not yet 18, you are also eligible to participate.`
     },
     {
-        question: `Why are you hosting HackXX?`,
+        question: `How do I get there?`,
         answer: (
             <div>
-                There is currently a huge gender disparity within the realm of tech and engineering. At most hackathons, women make up only 20% of the total participants, and only 24% of professional computer scientists are women. This gender gap has actually been growing since the 1980’s, and this needs to change. We believe that HackXX is a step towards achieving better gender representation in the tech space.
-                
-                <div className="mt-3">
-                    <div>
-                        <a target="_blank" href="https://medium.com/ladies-storm-hackathons/the-gender-gap-as-told-by-data-71dfce420519" className="text-info">
-                            Ladies Storm Hackathons - The Gender Gap, As Told by Data
-                        </a>
-                    </div>
-                    <div className="mt-2">
-                        <a target="_blank" href="https://fairygodboss.com/articles/women-in-tech-facts-figures-and-percentages" className="text-info">
-                            Fairygodboss - Women In Tech: Facts, Figures And Percentages
-                        </a>
-                    </div>
-                    <div className="mt-2">
-                        <a target="_blank" href="https://girlswhocode.com/about-us/ " className="text-info">
-                            Girls Who Code
-                        </a>
-                    </div>
-
-                </div>    
-            </div>)
+                HackXX will take place in <a href="https://goo.gl/maps/orDRHLUZcPjMoW6HA" target="_blank">Price Center Ballroom West</a>. You can apply for <a href="https://tesc.typeform.com/to/PDCo4K" target="_blank">travel reimbursement</a>, which will be distributed on a case-by-case basis.
+            </div>
+            )
     },
     {
-        question: `Who can go to HackXX?`,
-        answer: 'All highschool students and college/university students over 18 of any and all gender identities are welcome to attend.'
+        question: `Do I have to pay?`,
+        answer: 'No!'
     },  
-    {
-        question: 'How long is HackXX?',
-        answer: 'The hacking period is 24 hours long.'
-    },
-    /*{
-        question: 'Will there be travel reimbursement?',
-        answer: 'We will not be reimbursing travel costs exceeding $50. This cap is intended to cover the cost of local travel. A form will be sent to attendees after the event for requesting reimbursement.'
-    },*/
-    {
-        question: 'I’m not a CS major. Can I still go?',
-        answer: 'Yes! We welcome students of all majors and backgrounds.'
-    },
-    {
-        question: `Will there be food?`,
-        answer: `Yes! We will provide meals for all hackers as well as snacks throughout the length of the event.`
-    },  
-    {
-        question: 'What is the maximum team size?',
-        answer: 'You may hack in teams of up to four. Make sure everyone on the team registers on this website!'
-    },
     {
         question: `What if I don't have a team?`,
-        answer: 'We will facilitate a team mixer at the beginning of the hackathon for you to find team members! However, if you know you want to hack alone, you are more than welcome to do so.'
+        answer: 'We will host team formation events prior to the event and at the beginning of hackathon so that no one has to hack alone. We allow teams up to four hackers.'
     }, 
     {
-        question: `Is there a Code of Conduct?`,
+        question: 'What should I bring?',
+        answer: 'Bring your student ID or government issued ID, computer, any external peripherals you may need, any hardware you plan on using, and an open mind. Also bring a change of clothes and toiletries you may need. You may also bring a sleeping bag if you plan to sleep.'
+    },
+    {
+        question: 'What do volunteers and mentors do?',
         answer: (
             <div>
-                Yes! HackXX follows the <a target="_blank" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code Of Conduct</a>
+                <p>
+                    General volunteers help out with logistics during the event such as check in, clean up, food distribution, and other tasks that make HackXX possible!
+                </p>
+                <p>
+                    Mentors assist hackers with their projects when stuck. They’ll be floating around the hacking space helping participants with any questions they might have, especially technical questions in a domain the mentor is familiar with.
+                </p>
             </div>
         )
     },
     {
-        question: `Do you have travel reimbursements?`,
-        answer: 'Yes! Once you are accepted, we will send you a form for applying for a travel reimbursement.'
+        question: `Are there any rules?`,
+        answer: (
+            <div>
+                We are adopting <a target="_blank" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Major League Hacking’s Code of Conduct</a>, which requires you to respect others and help us keep HackXX a safe space for everyone. If you want your project to be considered for an award, you may only submit work that your team wrote during the hackathon.
+            </div>
+        )
     }
 ]
 

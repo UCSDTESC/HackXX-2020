@@ -8,20 +8,20 @@ import {
     SectionContent,
 } from '../styles';
 
-import {DarkBackground} from '../constants';
+import {WhyConstants} from '../constants';
 import {mediaBreakpointDown} from '../../breakpoints';
 
-const TracksSection = styled(Page)`
+const WhySection = styled(Page)`
     height: auto;
-    background: ${DarkBackground.background};
+    background: ${WhyConstants.gradient};
 `
 
-const TracksHeader = styled(SectionHeader)`
+const WhyHeader = styled(SectionHeader)`
     display: inline-block;
     text-align: center;
 `
 
-const TracksImg = styled.img`
+const WhyImg = styled.img`
     width: 8.5rem;
     margin-top: 3rem;
 
@@ -38,13 +38,13 @@ const ThirdTrackImg = styled.img`
     `)}
 `
 
-const TracksTitle = styled.div`
+const WhyTitle = styled.div`
     font-size: 2rem;
     display: block;
     text-align: center;
 `
 
-const ThirdTracksTitle = styled.div`
+const ThirdWhyTitle = styled.div`
     margin-top: -12rem;
     font-size: 2rem;
     display: block;
@@ -55,10 +55,10 @@ const ThirdTracksTitle = styled.div`
     `)}
 `
 
-const TracksDescription = styled.div`
+const WhyDescription = styled.div`
     display: block;
-    text-align: left;
-    background: rgba(255, 255, 255, 0.2);
+    //text-align: left;
+    //background: rgba(255, 255, 255, 0.2);
     border-radius: 45px;
     padding: 1.5rem;
     z-index: 100;
@@ -77,41 +77,41 @@ const Fish = styled.img`
 class Why extends Component {
     render() {
         return (
-            <TracksSection id="tracks">
+            <WhySection id="why">
                 <Container className="d-flex mx-auto h-100">
                     <SectionContent>
                         <div className="container-fluid">
                             <div className="row justify-content-center">
-                                <TracksHeader>Why should I go to HackXX?</TracksHeader>
+                                <WhyHeader>Why should I go to HackXX?</WhyHeader>
                                 HackXX is for students of all races, gender, and sexuality
                             </div>
                             <div className="row justify-content-center">
                                 <div className="col-md-4 text-center">
-                                    <TracksImg src="/tracks/sustainability.svg" />
+                                    <WhyImg src="/tracks/sustainability.svg" />
                                     {/*<TracksTitle>Sustainability</TracksTitle>*/}
-                                    <TracksDescription>
+                                    <WhyDescription>
                                         All majors are welcome to explore their ideas and passions! Dive into various fields of interest through our workshops and technical talks.
-                                    </TracksDescription>
+                                    </WhyDescription>
                                 </div>
                                 <div className="col-md-4 text-center">
-                                    <TracksImg src="/tracks/wellbeing.svg" />
+                                    <WhyImg src="/tracks/wellbeing.svg" />
                                     {/*<TracksTitle>Health and Wellness</TracksTitle>*/}
-                                    <TracksDescription>
+                                    <WhyDescription>
                                         Form strong bonds by engaging with other women in tech and interacting with the engineering community.
-                                    </TracksDescription>
+                                    </WhyDescription>
                                 </div>
                                 <div className="col-md-4 text-center">
-                                    <TracksImg src="/tracks/wellbeing.svg" />
+                                    <WhyImg src="/tracks/wellbeing.svg" />
                                     {/*<ThirdTracksTitle>Education</ThirdTracksTitle>*/}
-                                    <TracksDescription>
+                                    <WhyDescription>
                                         New to hackathons? We have a supportive group of mentors who can walk you through it and provide you with resources!
-                                    </TracksDescription>
+                                    </WhyDescription>
                                 </div>
                             </div>
                         </div>
                     </SectionContent>
                 </Container>
-            </TracksSection>
+            </WhySection>
         )
     }
 }

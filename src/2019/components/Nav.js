@@ -33,7 +33,7 @@ const NavLogo = styled.img`
     margin-left: 2rem;
 
     ${mediaBreakpointDown('sm', `
-        content: url('/logo-small.png');
+        content: url('/logo.svg');
         width: 2.4rem;
         margin-left: calc(50% - 1.2rem);
     `)}
@@ -58,12 +58,12 @@ class Nav extends Component {
             if ($(this).scrollTop() > SCROLL_THRESHOLD) { 
                 //make nav white when below threshold
                 _nav.addClass('bg-dark shadow');
-                _nav.addClass('test');
+                //_nav.addClass('test');
             } else {
                 //make nav transparent only if the nav is collapsed
                 if ($(window).width() > 768 || $('.navbar-toggler').attr('aria-expanded') === "false") {
                     _nav.removeClass('bg-dark shadow');
-                    _nav.removeClass('test');
+                    //_nav.removeClass('test');
                 }
             }
         });
@@ -106,9 +106,9 @@ class Nav extends Component {
                         <li className="nav-item">
                             <NavLink className="nav-link" href="#about" onClick={this.clickScroll}>About</NavLink>
                         </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" href="#tracks" onClick={this.clickScroll}>Why</NavLink>
-                        </li>
+                        {/* <li className="nav-item">
+                            <NavLink className="nav-link" href="#why" onClick={this.clickScroll}>Why</NavLink>
+                        </li> */}
                         <li className="nav-item">
                             <NavLink className="nav-link" href="#involved" onClick={this.clickScroll}>Get Involved</NavLink>
                         </li>

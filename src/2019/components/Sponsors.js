@@ -5,14 +5,15 @@ import {
     Page,
     Container,
     SectionContent,
-    SectionHeader
+    SectionHeader,
+    PaddedRow
 } from '../styles';
 
-import {DarkBackground} from '../constants';
+import {SponsorConstants} from '../constants';
 import {tierOneSponsor, tierTwoSponsor, tierThreeSponsor, tierFourSponsor, tierOnePartner, tierTwoPartner} from '../data/Sponsors.js'
 
 const SponsorsSection = styled(Page)`
-    background: ${DarkBackground.background};
+    background: ${SponsorConstants.gradient};
 `
 
 const SponsorContainer = styled.a`
@@ -21,6 +22,22 @@ const SponsorContainer = styled.a`
 const SponsorContent = styled(SectionContent)`
     background: rgba(255, 255, 255, 0.5);
     border-radius: 45px;
+`
+
+const SponsorContact = styled(SectionContent)`
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+`
+
+const SponsorLink = styled.a`
+    color: white;
+    text-decoration: none;
+
+    :hover {
+        color: white;
+        text-decoration: underline;
+    }
 `
 
 const AnglerFish = styled.img`
@@ -54,6 +71,10 @@ class Sponsors extends Component {
                             <div className="row justify-content-center">
                                 <SectionHeader>Sponsors</SectionHeader>
                             </div>
+                            <PaddedRow className="row justify-content-center">
+                                Stay tuned!
+                            </PaddedRow>
+                            {/*
                             <SponsorContent>
                                 <div className="row align-items-center justify-content-center">
                                     {this.renderSponsors(tierOneSponsor)}
@@ -68,10 +89,18 @@ class Sponsors extends Component {
                                     {this.renderSponsors(tierFourSponsor)}
                                 </div>
                             </SponsorContent>
+                            */}
 
+                            <SponsorContact className="text-center">
+                                Interested in sponsoring? Email us at <SponsorLink href="mailto:sponsor@tesc.ucsd.edu" target="_blank">sponsor@tesc.ucsd.edu</SponsorLink>.
+                            </SponsorContact>
+
+                            {/*
                             <div className="row justify-content-center">
                                 <SectionHeader>Partners</SectionHeader>
                             </div>
+                            */}
+                            {/*
                             <SponsorContent>
                                 <div className="row align-items-center justify-content-center">
                                     {this.renderSponsors(tierOnePartner)}
@@ -80,14 +109,7 @@ class Sponsors extends Component {
                                     {this.renderSponsors(tierTwoPartner)}
                                 </div>
                             </SponsorContent>
-
-                            <div className="row">
-                                <div className="col-md-6">
-                                    <AnglerFish src="/sea-animals/anglerfish.svg" />
-                                </div>
-                                <div className="col-md-6"></div>
-                                <div className="col-md-6"></div>
-                            </div>
+                            */}
                         </div>
                     </SectionContent>
                 </Container>

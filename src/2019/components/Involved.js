@@ -14,11 +14,11 @@ import {
 } from '../styles';
 
 import {
-    DarkBackground
+    InvolvedConstants
 } from '../constants';
 
 const InvolvedSection = styled(Page)`
-    background: ${DarkBackground.background};
+    background: ${InvolvedConstants.gradient};
     height: auto;
 `
 
@@ -35,7 +35,7 @@ class Involved extends Component {
                                 If you're a student and you're interested in HackXX, go ahead and
                             </div>
                             <div className="row justify-content-center align-items-center">
-                                <WhiteButton className="btn btn-outline-light" href="https://www.tesc.events/register/hackxx" target="_blank">register</WhiteButton>
+                                <WhiteButton className="btn btn-outline-light" href="https://www.tesc.events/register/hackxx2020" target="_blank">register</WhiteButton>
                             </div>
 
                             {/* Help out section with three buttons */}
@@ -44,10 +44,10 @@ class Involved extends Component {
                             </div>
                             <div className="row justify-content-center align-items-start">
                                 <div className="col-md-auto">
-                                    <WhiteButton className="btn btn-outline-light" href="https://tesc.typeform.com/to/wnhOgj" target="_blank">volunteer</WhiteButton>
+                                    <WhiteButton className="btn btn-outline-light" href="https://tesc.typeform.com/to/dM4HtK" target="_blank">volunteer</WhiteButton>
                                 </div>
                                 <div className="col-md-auto">
-                                    <WhiteButton className="btn btn-outline-light" href="https://tesc.typeform.com/to/wnhOgj" target="_blank">mentor</WhiteButton>
+                                    <WhiteButton className="btn btn-outline-light" href="https://tesc.typeform.com/to/dM4HtK" target="_blank">mentor</WhiteButton>
                                 </div>
                                 <div className="col-md-auto">
                                     <WhiteButton className="btn btn-outline-light" href="mailto:sponsor@tesc.ucsd.edu" target="_blank">sponsor</WhiteButton>

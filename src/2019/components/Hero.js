@@ -30,7 +30,7 @@ const HeroImage = styled.img`
     margin-bottom: 1rem;
 
     ${mediaBreakpointDown('md', `
-        margin-top: -9rem;
+        //margin-top: -9rem;
     `)}
 `;
 
@@ -48,8 +48,9 @@ const HeroBraces = styled(Braces)`
 `;
 
 const HeroContent = styled.div`
-    font-family: 'Reem Kufi', sans-serif;
+    //font-family: 'Reem Kufi', sans-serif;
     color: white;
+    font-size: 1.2rem;
     text-align: center;
 `
 

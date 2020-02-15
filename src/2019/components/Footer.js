@@ -2,10 +2,10 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import {mediaBreakpointDown} from '../../breakpoints';
 
-import {DarkBackground} from '../constants';
+import {FooterConstants} from '../constants';
 
 const ContentSection = styled.section`
-    background: ${DarkBackground.background};
+    background: ${FooterConstants.background};
     z-index: 2;
     text-align: center;
     height: 18rem;
@@ -28,18 +28,13 @@ const ContentSection = styled.section`
 `
 
 const ContactHeader = styled.h1`
-    font-family: 'Reem Kufi', sans-serif;
     color: white;
     z-index: 2;
     line-height: 1.7;
-
-    ${mediaBreakpointDown('sm', `
-        font-size: 2rem;
-    `)}
+    font-size: 2rem;
 `
 
 const ContactLink = styled.a`
-    font-family: 'Reem Kufi', sans-serif;
     color: white !important;
 `
 
@@ -48,13 +43,11 @@ const FooterContainer = styled.footer`
 `
 
 const FooterLinks = styled.ul`
-    font-family: 'Reem Kufi', sans-serif;
     list-style: none;
     padding: 0;
 `
 
 const FooterLinkItem = styled.li`
-    font-family: 'Reem Kufi', sans-serif;
     font-size: 1.75rem;
 
     &:not(:first-child) {
@@ -124,7 +117,7 @@ class Footer extends Component {
                                 </FooterLink>
                             </FooterLinkItem>
                             <FooterLinkItem>
-                                <FooterLink target="_new" href="mailto://sdhacks@tesc.ucsd.edu">
+                                <FooterLink target="_new" href="mailto:hello@tesc.ucsd.edu">
                                     <i className="fas fa-envelope-square" />
                                 </FooterLink>
                             </FooterLinkItem>

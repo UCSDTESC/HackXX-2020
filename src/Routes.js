@@ -18,7 +18,7 @@ class Routes extends React.Component {
         return (
             <Switch>
                 <Route path="/" exact component={this.with2019Layout(SDHacks2019Page)}/>
-                <Route path="/live" exact component={this.with2019Layout(Live2019)}/>
+                {/*<Route path="/live" exact component={this.with2019Layout(Live2019)}/>*/}
             </Switch>
         )
     }

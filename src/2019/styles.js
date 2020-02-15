@@ -17,7 +17,7 @@ export const SectionHeader = styled.h1`
     font-weight: 800;
     font-size: 3rem;
     margin-top: 2rem;
-    font-family: 'Reem Kufi', sans-serif;
+    //font-family: 'Reem Kufi', sans-serif;
 
     ${mediaBreakpointDown('md', `
         font-size: 2.4rem;
@@ -30,7 +30,7 @@ export const SectionContent = styled.div`
     font-size: 1.3rem;
     color: white;
     margin-bottom: 50px;
-    font-family: 'Reem Kufi', sans-serif;
+    //font-family: 'Reem Kufi', sans-serif;
 
     ${mediaBreakpointDown('sm', `
         padding-left: 0;
@@ -67,10 +67,15 @@ export const WhiteButton = styled.a`
     position: relative;
     z-index: 1;
     font-size: 1.4rem;
-    font-family: 'Reem Kufi', sans-serif;
+    //font-family: 'Reem Kufi', sans-serif;
 
     ${mediaBreakpointDown('md', `
         margin-top: 1rem;
         margin-bottom: 1rem;
     `)}
+`
+
+export const PaddedRow = styled.div`
+    margin: 2rem 0;
+    font-size: 2rem;
 `
