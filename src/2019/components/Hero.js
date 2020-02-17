@@ -58,6 +58,7 @@ const HeroContent = styled.div`
 const CTA = styled(WhiteButton)`
     margin-top: 1rem;
     margin-bottom: 1rem;
+    z-index: 10;
 
     &:hover {
         color: #071728 !important;

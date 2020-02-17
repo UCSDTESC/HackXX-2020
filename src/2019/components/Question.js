@@ -37,7 +37,7 @@ const QuestionContent = styled.div`
     padding: 1rem 2rem;
 
     a {
-        color: ${PURPLE};
+        color: #9CDCEC;
     }
 `
 

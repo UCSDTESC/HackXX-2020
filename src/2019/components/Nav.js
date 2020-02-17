@@ -38,9 +38,9 @@ const NavLogo = styled.img`
     margin-left: 2rem;
 
     ${mediaBreakpointDown('sm', `
-        content: url('/logo.svg');
-        width: 2.4rem;
-        margin-left: calc(50% - 1.2rem);
+        content: url('/nav-logo.svg');
+        width: 8rem;
+        margin-left: calc(50% - 4rem);
     `)}
 `
 

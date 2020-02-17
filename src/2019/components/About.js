@@ -52,6 +52,11 @@ const WhyImg = styled.img`
     margin-top: 3rem;
 `
 
+const MiddleWhyImg = styled.img`
+    height: 4rem;
+    margin-top: 6rem;
+`
+
 const ThirdTrackImg = styled.img`
     width: 19rem;
 
@@ -108,7 +113,7 @@ class About extends Component {
 
                             <div className="row justify-content-center">
                                 <WhyHeader>Why should I go to HackXX?</WhyHeader>
-                                HackXX is for students of all races, gender, and sexuality
+                                HackXX is for students of all races, gender, and sexuality.
                             </div>
                             <div className="row justify-content-center">
                                 <div className="col-md-4 text-center">
@@ -119,7 +124,7 @@ class About extends Component {
                                     </WhyDescription>
                                 </div>
                                 <div className="col-md-4 text-center">
-                                    <WhyImg src="/cat-2.svg" />
+                                    <MiddleWhyImg src="/cat-2.svg" />
                                     {/*<TracksTitle>Health and Wellness</TracksTitle>*/}
                                     <WhyDescription>
                                         Form strong bonds by engaging with other women in tech and interacting with the engineering community.

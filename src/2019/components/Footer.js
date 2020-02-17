@@ -97,7 +97,7 @@ class Footer extends Component {
                     <div className="container-fluid">
                         <FooterLinks className="flex-column ml-md-auto d-flex flex-md-row justify-content-between text-center text-md-left">
                             <FooterLinkItem>
-                                <FooterLink target="_new" href="https://www.facebook.com/ucsd.tesc/">
+                                <FooterLink target="_new" href="https://www.facebook.com/hackXXsd/">
                                     <i className="fab fa-facebook-square" />
                                 </FooterLink>
                             </FooterLinkItem>
