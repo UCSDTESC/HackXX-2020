@@ -23,6 +23,10 @@ const InvolvedSection = styled(Page)`
     height: auto;
 `
 
+const InvolvedButton = styled(WhiteButton)`
+    margin-top: 1rem;
+`
+
 class Involved extends Component {
     render() {
         return (
@@ -36,22 +40,22 @@ class Involved extends Component {
                                 If you're a student and you're interested in HackXX, go ahead and
                             </div>
                             <div className="row justify-content-center align-items-center">
-                                <WhiteButton className="btn btn-outline-light" href="https://www.tesc.events/register/hackxx2020" target="_blank">register</WhiteButton>
+                                <InvolvedButton className="btn btn-outline-light" href="https://www.tesc.events/register/hackxx2020" target="_blank">register</InvolvedButton>
                             </div>
 
                             {/* Help out section with three buttons */}
-                            <div className="row justify-content-center mt-4">
+                            <div className="row justify-content-center mt-5">
                                 If you think HackXX is a great initiative and would like to help out, you can be a
                             </div>
                             <div className="row justify-content-center align-items-start">
                                 <div className="col-md-auto">
-                                    <WhiteButton className="btn btn-outline-light" href="https://tesc.typeform.com/to/dM4HtK" target="_blank">volunteer</WhiteButton>
+                                    <InvolvedButton className="btn btn-outline-light" href="https://tesc.typeform.com/to/dM4HtK" target="_blank">volunteer</InvolvedButton>
                                 </div>
                                 <div className="col-md-auto">
-                                    <WhiteButton className="btn btn-outline-light" href="https://tesc.typeform.com/to/dM4HtK" target="_blank">mentor</WhiteButton>
+                                    <InvolvedButton className="btn btn-outline-light" href="https://tesc.typeform.com/to/dM4HtK" target="_blank">mentor</InvolvedButton>
                                 </div>
                                 <div className="col-md-auto">
-                                    <WhiteButton className="btn btn-outline-light" href="mailto:sponsor@tesc.ucsd.edu" target="_blank">sponsor</WhiteButton>
+                                    <InvolvedButton className="btn btn-outline-light" href="mailto:sponsor@tesc.ucsd.edu" target="_blank">sponsor</InvolvedButton>
                                 </div>
                             </div>
 
