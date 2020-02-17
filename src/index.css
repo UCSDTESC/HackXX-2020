@@ -13,8 +13,8 @@ code {
     monospace;
 }
 
-.nav__white {
-  background: rgb(0, 0, 0, 0,5);
+.nav__gray {
+  background: #343A40;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -28,11 +28,6 @@ code {
 .scroll__bg {
   color: blue;
 }
-
-/* .panel, .panel-title {
-  background-color: transparent;
-  background: transparent;
-} */
 
 @keyframes move-clouds-back {
   from {background-position:0 0;}

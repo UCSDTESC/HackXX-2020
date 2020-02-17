@@ -13,6 +13,7 @@ import {mediaBreakpointDown} from '../../breakpoints';
 
 const AboutSection = styled(Page)`
     height: auto;
+    padding-top: 2rem;
     //padding-bottom: 10rem;
     background: ${AboutConstants.gradient};
 
@@ -47,12 +48,8 @@ const WhyHeader = styled(SectionHeader)`
 `
 
 const WhyImg = styled.img`
-    width: 8.5rem;
+    height: 7rem;
     margin-top: 3rem;
-
-    ${mediaBreakpointDown('sm', `
-        width: 40%;
-    `)}
 `
 
 const ThirdTrackImg = styled.img`

@@ -30,7 +30,7 @@ const HeroImage = styled.img`
     margin-bottom: 1rem;
 
     ${mediaBreakpointDown('md', `
-        //margin-top: -9rem;
+        margin-top: -9rem;
     `)}
 `;
 
@@ -45,6 +45,7 @@ const HeroBraces = styled(Braces)`
     display: block; 
     margin: 0 auto;
     margin-bottom: 1rem;
+    fill: white;
 `;
 
 const HeroContent = styled.div`

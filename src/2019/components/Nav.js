@@ -6,7 +6,7 @@ import {withRouter} from 'react-router-dom';
 import {mediaBreakpointDown} from '../../breakpoints';
 
 const NavContainer = styled.nav`
-    background: transparent;
+    //background: transparent;
     position: fixed;
     top: 0;
     width: 100%;
@@ -23,9 +23,14 @@ const NavLink = styled.a`
     text-align: center;
     margin: 0.2rem;
 
-    & .nav-link {
+    /*& .nav-link {
         color: white;
-    }
+    }*/
+
+    /*&:hover {
+        color: white;
+        text-decoration: wavy;
+    }*/
 `
 
 const NavLogo = styled.img`
@@ -56,30 +61,22 @@ class Nav extends Component {
 
         $(window).scroll(function () {
             if ($(this).scrollTop() > SCROLL_THRESHOLD) { 
-                //make nav white when below threshold
+                // if user scrolled down enough, make the nav gray
                 _nav.addClass('bg-dark shadow');
-                //_nav.addClass('test');
             } else {
-                //make nav transparent only if the nav is collapsed
                 if ($(window).width() > 768 || $('.navbar-toggler').attr('aria-expanded') === "false") {
-                    _nav.removeClass('bg-dark shadow');
-                    //_nav.removeClass('test');
+                    _nav.removeClass('bg-dark shadow')        
                 }
             }
         });
 
         $('.navbar-toggler').on('click', (e) => {
             if ($('.navbar-toggler').scrollTop() < SCROLL_THRESHOLD) {
-                // if (_nav.hasClass('nav__white')) {
-                //     _nav.removeClass('nav__white')
-                // }
-                // else {
-                //     _nav.addClass('nav__white');
-                // }
-                if (_nav.hasClass('bg-dark shadow')) {
-                    _nav.removeClass('bg-dark shadow');
-                } else {
-                    _nav.addClass('bg-dark shadow');
+                if (_nav.hasClass('nav__gray')) {
+                    _nav.removeClass('nav__gray')
+                }
+                else {
+                    _nav.addClass('nav__gray');
                 }
             } 
         });
