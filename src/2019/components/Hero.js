@@ -14,7 +14,7 @@ const HeroSection = styled(Page)`
     background: url('/hero.svg'), linear-gradient(180deg, #224755 0%, #011321 100%);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom 100%;
+    //background-position: top 100%;
     min-height: 120vh;
     width: 100%;
 
@@ -97,6 +97,8 @@ class Hero extends Component {
 
                             <div className="col-md-6 align-items-center d-flex justify-content-center flex-column">
                             </div>
+
+                            <div class="clouds" />
                         </Container>
                     </div>
                 </div>

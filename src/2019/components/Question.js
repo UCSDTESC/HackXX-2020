@@ -35,6 +35,10 @@ const QuestionContent = styled.div`
     text-decoration: none;
     text-align: center;
     padding: 1rem 2rem;
+
+    a {
+        color: ${PURPLE};
+    }
 `
 
 const QuestionText = styled.a`

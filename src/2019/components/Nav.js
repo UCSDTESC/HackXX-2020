@@ -70,11 +70,16 @@ class Nav extends Component {
 
         $('.navbar-toggler').on('click', (e) => {
             if ($('.navbar-toggler').scrollTop() < SCROLL_THRESHOLD) {
-                if (_nav.hasClass('nav__white')) {
-                    _nav.removeClass('nav__white')
-                }
-                else {
-                    _nav.addClass('nav__white');
+                // if (_nav.hasClass('nav__white')) {
+                //     _nav.removeClass('nav__white')
+                // }
+                // else {
+                //     _nav.addClass('nav__white');
+                // }
+                if (_nav.hasClass('bg-dark shadow')) {
+                    _nav.removeClass('bg-dark shadow');
+                } else {
+                    _nav.addClass('bg-dark shadow');
                 }
             } 
         });
@@ -106,9 +111,6 @@ class Nav extends Component {
                         <li className="nav-item">
                             <NavLink className="nav-link" href="#about" onClick={this.clickScroll}>About</NavLink>
                         </li>
-                        {/* <li className="nav-item">
-                            <NavLink className="nav-link" href="#why" onClick={this.clickScroll}>Why</NavLink>
-                        </li> */}
                         <li className="nav-item">
                             <NavLink className="nav-link" href="#involved" onClick={this.clickScroll}>Get Involved</NavLink>
                         </li>

@@ -115,21 +115,21 @@ class About extends Component {
                             </div>
                             <div className="row justify-content-center">
                                 <div className="col-md-4 text-center">
-                                    <WhyImg src="/tracks/sustainability.svg" />
+                                    <WhyImg src="/cat-1.svg" />
                                     {/*<TracksTitle>Sustainability</TracksTitle>*/}
                                     <WhyDescription>
                                         All majors are welcome to explore their ideas and passions! Dive into various fields of interest through our workshops and technical talks.
                                     </WhyDescription>
                                 </div>
                                 <div className="col-md-4 text-center">
-                                    <WhyImg src="/tracks/wellbeing.svg" />
+                                    <WhyImg src="/cat-2.svg" />
                                     {/*<TracksTitle>Health and Wellness</TracksTitle>*/}
                                     <WhyDescription>
                                         Form strong bonds by engaging with other women in tech and interacting with the engineering community.
                                     </WhyDescription>
                                 </div>
                                 <div className="col-md-4 text-center">
-                                    <WhyImg src="/tracks/wellbeing.svg" />
+                                    <WhyImg src="/cat-3.svg" />
                                     {/*<ThirdTracksTitle>Education</ThirdTracksTitle>*/}
                                     <WhyDescription>
                                         New to hackathons? We have a supportive group of mentors who can walk you through it and provide you with resources!

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 import {mediaBreakpointDown} from '../../breakpoints'
+import {ReactComponent as Balcony} from '../svg/balcony.svg';
 
 import {
     Page,
@@ -53,6 +54,8 @@ class Involved extends Component {
                                     <WhiteButton className="btn btn-outline-light" href="mailto:sponsor@tesc.ucsd.edu" target="_blank">sponsor</WhiteButton>
                                 </div>
                             </div>
+
+                            <Balcony className="mt-5" />
                         </div>
 
                     </SectionContent>
