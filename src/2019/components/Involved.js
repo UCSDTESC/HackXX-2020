@@ -36,7 +36,7 @@ class Involved extends Component {
                         <div className="container-fluid">
                             <SectionHeader className="text-center">How can I get involved?</SectionHeader>
                             {/* Register blurb and button */}
-                            <div className="row mt-5 justify-content-center align-items-center">
+                            <div className="row mt-5 justify-content-center align-items-center text-center">
                                 If you're a student and you're interested in HackXX, go ahead and
                             </div>
                             <div className="row justify-content-center align-items-center">
@@ -44,17 +44,17 @@ class Involved extends Component {
                             </div>
 
                             {/* Help out section with three buttons */}
-                            <div className="row justify-content-center mt-5">
+                            <div className="row justify-content-center text-center mt-5">
                                 If you think HackXX is a great initiative and would like to help out, you can be a
                             </div>
-                            <div className="row justify-content-center align-items-start">
-                                <div className="col-md-auto">
+                            <div className="row justify-content-center align-items-center">
+                                <div className="col-sm-auto col-md-auto align-self-center">
                                     <InvolvedButton className="btn btn-outline-light" href="https://tesc.typeform.com/to/dM4HtK" target="_blank">volunteer</InvolvedButton>
                                 </div>
-                                <div className="col-md-auto">
+                                <div className="col-sm-auto col-md-auto align-self-center">
                                     <InvolvedButton className="btn btn-outline-light" href="https://tesc.typeform.com/to/dM4HtK" target="_blank">mentor</InvolvedButton>
                                 </div>
-                                <div className="col-md-auto">
+                                <div className="col-sm-auto col-md-auto align-self-center">
                                     <InvolvedButton className="btn btn-outline-light" href="mailto:sponsor@tesc.ucsd.edu" target="_blank">sponsor</InvolvedButton>
                                 </div>
                             </div>

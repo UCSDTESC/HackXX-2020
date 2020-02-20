@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 import {mediaBreakpointDown} from '../../breakpoints';
-
 import {FooterConstants} from '../constants';
 
 const ContentSection = styled.section`

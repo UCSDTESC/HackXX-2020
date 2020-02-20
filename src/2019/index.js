@@ -23,15 +23,6 @@ import {
     Page
 } from './styles';
 
-const Group = styled(Page)`
-    background: url("/rocks_cutoff_with_turtle.svg"), ${WrapperConstants.gradient};
-    background-repeat: no-repeat;
-
-    ${mediaBreakpointDown('md', `
-        background: ${WrapperConstants.gradient};
-    `)}
-`
-
 class SDHacks2019Page extends Component {
 
     render() {
@@ -40,7 +31,6 @@ class SDHacks2019Page extends Component {
                 <Nav />
                 <Hero />
                 <About />
-                {/* <Why /> */}
                 <Involved />
                 <Faq />
                 <Schedule />

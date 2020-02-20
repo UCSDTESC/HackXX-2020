@@ -30,7 +30,7 @@ class Faq extends Component {
                     <SectionContent data-entrance="fade">
                         <div className="container-fluid">
                             <div className="row justify-content-center">
-                                <SectionHeader>
+                                <SectionHeader className="text-center">
                                     Frequently Asked Questions
                                 </SectionHeader>
                             </div>
