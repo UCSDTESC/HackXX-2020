@@ -40,10 +40,6 @@ const SponsorLink = styled.a`
     }
 `
 
-const AnglerFish = styled.img`
-    width: 60%;
-`
-
 function Sponsor(props) {
     const col = props.col || 'col-md-4 col-lg-4';
     console.log(props);

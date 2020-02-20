@@ -14,7 +14,6 @@ const HeroSection = styled(Page)`
     background: url('/hero.svg'), linear-gradient(180deg, #224755 0%, #011321 100%);
     background-repeat: no-repeat;
     background-size: cover;
-    //background-position: top 100%;
     min-height: 120vh;
     width: 100%;
 
@@ -26,10 +25,9 @@ const HeroSection = styled(Page)`
 
 const HeroImage = styled.img`
     width: 40%;
-    //margin-top: -10rem;
     margin-bottom: 1rem;
 
-    ${mediaBreakpointDown('md', `
+    ${mediaBreakpointDown('sm', `
         margin-top: -9rem;
     `)}
 `;
@@ -40,7 +38,6 @@ const HeroCopy = styled.div`
 `
 
 const HeroBraces = styled(Braces)`
-    //margin-top: 2rem;
     width: 50%;
     display: block; 
     margin: 0 auto;
@@ -49,7 +46,6 @@ const HeroBraces = styled(Braces)`
 `;
 
 const HeroContent = styled.div`
-    //font-family: 'Reem Kufi', sans-serif;
     color: white;
     font-size: 1.2rem;
     text-align: center;
@@ -89,11 +85,12 @@ class Hero extends Component {
                                             Apply
                                         </CTA>                      
                                     </Button>
-                                    {/*<Button href="https://tesc.typeform.com/to/vgXWp2" target="_blank" className="text-white">
+                                    <Button href="https://tesc.typeform.com/to/dM4HtK" target="_blank" className="text-white">
                                         <CTA className="btn btn-outline-light" >
                                             Volunteer
                                         </CTA>                      
-                                    </Button>*/}
+                                    </Button>
+                                    
                                 </HeroCopy>
                             </div>
 

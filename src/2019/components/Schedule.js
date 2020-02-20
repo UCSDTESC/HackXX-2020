@@ -46,10 +46,6 @@ const ScheduleSection = styled(Page)`
     background: ${ScheduleConstants.gradient};
 `
 
-/*${mediaBreakpointDown('md', `
-        font-size: 1.5rem;
-    `)}*/
-
 class Schedule extends Component {
     /*render() {
         return (

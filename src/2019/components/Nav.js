@@ -112,10 +112,10 @@ class Nav extends Component {
                             <NavLink className="nav-link" href="#involved" onClick={this.clickScroll}>Get Involved</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" href="#schedule" onClick={this.clickScroll}>Schedule</NavLink>
+                            <NavLink className="nav-link" href="#faq" onClick={this.clickScroll}>FAQ</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link" href="#faq" onClick={this.clickScroll}>FAQ</NavLink>
+                            <NavLink className="nav-link" href="#schedule" onClick={this.clickScroll}>Schedule</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink className="nav-link" href="#sponsors" onClick={this.clickScroll}>Sponsors</NavLink>
