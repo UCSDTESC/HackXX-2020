@@ -72,6 +72,8 @@ class About extends Component {
 
                             <div className="row justify-content-center">
                                 <WhyHeader>Why should I go to HackXX?</WhyHeader>
+                            </div>
+                            <div className="row justify-content-center">
                                 HackXX is for students of all races, gender, and sexuality.
                             </div>
                             <div className="row justify-content-center">
