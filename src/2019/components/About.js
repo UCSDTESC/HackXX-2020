@@ -74,7 +74,9 @@ class About extends Component {
                                 <WhyHeader>Why should I go to HackXX?</WhyHeader>
                             </div>
                             <div className="row justify-content-center">
-                                HackXX is for students of all races, gender, and sexuality.
+                                <AboutContent>
+                                    HackXX is for students of all races, gender, and sexuality.
+                                </AboutContent>
                             </div>
                             <div className="row justify-content-center">
                                 <div className="col-md-4 text-center">
