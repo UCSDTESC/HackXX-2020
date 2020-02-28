@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import {mediaBreakpointDown} from '../../breakpoints';
 import {FooterConstants} from '../constants';
+import {SectionHeader} from '../styles';
 
 const ContentSection = styled.section`
     background: ${FooterConstants.background};
@@ -116,7 +117,7 @@ class Footer extends Component {
                                 </FooterLink>
                             </FooterLinkItem>
                             <FooterLinkItem>
-                                <FooterLink target="_new" href="mailto:hello@tesc.ucsd.edu">
+                                <FooterLink target="_new" href="mailto:hackxx@tesc.ucsd.edu">
                                     <i className="fas fa-envelope-square" />
                                 </FooterLink>
                             </FooterLinkItem>
