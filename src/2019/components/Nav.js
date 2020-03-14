@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 import $ from 'jquery';
+import {Alert} from 'reactstrap';
 
 import {withRouter} from 'react-router-dom';
 import {mediaBreakpointDown} from '../../breakpoints';
@@ -40,7 +41,8 @@ const NavLogo = styled.img`
     ${mediaBreakpointDown('sm', `
         content: url('/nav-logo.svg');
         width: 8rem;
-        margin-left: calc(50% - 4rem);
+        margin-left: calc(50% - 4.5rem);
+        margin-right: 1rem;
     `)}
 `
 
@@ -48,11 +50,23 @@ const NavText = styled.li`
     color: white;
 `
 
+const TopAlert = styled(Alert)`
+    width: 100%;
+`
+
 class Nav extends Component {
 
     constructor(props) {
         super(props);
         this.clickScroll = this.clickScroll.bind(this);
+        this.state = {
+            visible: true
+        }
+        this.onDismiss = this.onDismiss.bind(this);
+    }
+
+    onDismiss() {
+        this.setState({ visible: false });
     }
 
     componentDidMount() {
@@ -99,31 +113,45 @@ class Nav extends Component {
     render() {
         return (
             <NavContainer className="navbar navbar-expand-lg navbar-light" id="top-nav">
-                <NavLogo src="/nav-logo.svg" />
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon" />
-                </button>
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav ml-auto">
-                        <li className="nav-item">
-                            <NavLink className="nav-link" href="#about" onClick={this.clickScroll}>About</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" href="#involved" onClick={this.clickScroll}>Get Involved</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" href="#faq" onClick={this.clickScroll}>FAQ</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" href="#schedule" onClick={this.clickScroll}>Schedule</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" href="#sponsors" onClick={this.clickScroll}>Sponsors</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="nav-link" href="#contact" onClick={this.clickScroll}>Contact</NavLink>
-                        </li>
-                    </ul>
+                <div className="row">
+                    <TopAlert 
+                        color={this.props.color || 'info'} 
+                        isOpen={this.state.visible} 
+                        toggle={this.onDismiss}
+                        fade={false}
+                    >
+                        <div className="text-center ml-5">
+                            <span>HackXX 2020 has been canceled. Please check our <a href="https://www.facebook.com/events/1343077579235942/" target="_blank">Facebook event page</a> for more info.</span>
+                        </div>
+                    </TopAlert>
+                </div>
+                <div className="row">
+                    <NavLogo src="/nav-logo.svg" />
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon" />
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav ml-auto">
+                            <li className="nav-item">
+                                <NavLink className="nav-link" href="#about" onClick={this.clickScroll}>About</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" href="#involved" onClick={this.clickScroll}>Get Involved</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" href="#faq" onClick={this.clickScroll}>FAQ</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" href="#schedule" onClick={this.clickScroll}>Schedule</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" href="#sponsors" onClick={this.clickScroll}>Sponsors</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" href="#contact" onClick={this.clickScroll}>Contact</NavLink>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </NavContainer>
         )

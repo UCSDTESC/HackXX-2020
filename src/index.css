@@ -21,6 +21,10 @@ code {
   color: white;
 }
 
+.navbar {
+  display: block;
+}
+
 .test {
   color: gray;
 }
